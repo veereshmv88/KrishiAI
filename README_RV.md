@@ -211,7 +211,7 @@ Follow these steps to configure and build the application on your system:
 3. Open `com.krishiai.app.utils.Constants.kt` in Android Studio.
 4. Replace `WEATHER_API_KEY` placeholder with your key:
    ```kotlin
-   const val WEATHER_API_KEY = "your_actual_api_key_here"
+   const val WEATHER_API_KEY = "ADD_API_KEY_HERE"
    ```
    *Note: If this key is left empty, the application automatically switches to Simulated Weather fallbacks, ensuring the app remains runnable and presents realistic data during evaluations.*
 

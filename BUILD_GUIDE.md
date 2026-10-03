@@ -71,7 +71,7 @@ To enable real weather data:
 1. Sign up at [OpenWeatherMap](https://openweathermap.org/api) (free tier available)
 2. Copy your API key
 3. Open `app/src/main/java/com/krishiai/app/utils/Constants.kt`
-4. Set: `const val WEATHER_API_KEY = "your_actual_key_here"`
+4. Set: `const val WEATHER_API_KEY = "ADD_API_KEY_HERE"`
 
 ---
 
