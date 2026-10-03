@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "uid": "demo_farmer",
+      "name": "Basavaraj Gowda",
+      "email": "farmer@krishi.com",
+      "password": "26c07fc7be1668f8ea7e3801d4ffdbf33de487a593a69028936ec49f2c89f6ab",
+      "phone": "9845012345",
+      "role": "Farmer",
+      "district": "Mandya",
+      "taluk": "Maddur",
+      "biz": "Gowda Organic Farms",
+      "createdAt": 1784984402965
+    },
+    {
+      "uid": "demo_buyer",
+      "name": "Suresh Kumar",
+      "email": "buyer@krishi.com",
+      "password": "e547bd13228250dfb4c7df1d1ebb78cfd9f2ada56ebb0c425d35829dd3ac4ae8",
+      "phone": "9740098765",
+      "role": "Buyer",
+      "district": "Mysuru",
+      "taluk": "Hunsur",
+      "city": "Mysuru City",
+      "biz": "Mandya Fresh Mart",
+      "createdAt": 1784984402965
+    }
+  ],
+  "products": [
+    {
+      "id": "p_1785049164521",
+      "farmId": "u_1785049121133",
+      "farmerName": "ABCD",
+      "farmerPhone": "1234567890",
+      "cat": "Fruits",
+      "name": "Grapes",
+      "qty": "10 kg",
+      "quality": "Average",
+      "harvestMs": 1785110400000,
+      "desc": "NON",
+      "district": "Tumakuru",
+      "taluk": "Tumakuru",
+      "img": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&auto=format&fit=crop",
+      "base": 90,
+      "aiPrice": 99,
+      "price": 99,
+      "status": "AVAILABLE",
+      "ai": {
+        "base": 90,
+        "qAdj": -9,
+        "fAdj": 4.5,
+        "sAdj": 13.5,
+        "wAdj": 0,
+        "final": 99,
+        "conf": 95,
+        "rec": "✅ Promote Listing — High demand conditions active"
+      },
+      "createdAt": 1785049164521
+    },
+    {
+      "id": "p1",
+      "farmId": "demo_farmer",
+      "farmerName": "Basavaraj Gowda",
+      "farmerPhone": "9845012345",
+      "cat": "Vegetables",
+      "name": "Tomato",
+      "qty": "600 kg",
+      "quality": "Good",
+      "harvestMs": 1784811602965,
+      "desc": "Organic field-grown country tomatoes. Firm, bright red. Ready to dispatch from Mandya.",
+      "district": "Mandya",
+      "taluk": "Maddur",
+      "img": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&auto=format&fit=crop",
+      "base": 30,
+      "aiPrice": 33,
+      "price": 32,
+      "status": "AVAILABLE",
+      "ai": {
+        "base": 30,
+        "qAdj": 1.5,
+        "fAdj": 1.5,
+        "sAdj": 0,
+        "wAdj": 0,
+        "final": 33,
+        "conf": 95,
+        "rec": "✅ Sell Today — Freshness is optimal"
+      },
+      "createdAt": 1784984402965
+    },
+    {
+      "id": "p2",
+      "farmId": "demo_farmer",
+      "farmerName": "Basavaraj Gowda",
+      "farmerPhone": "9845012345",
+      "cat": "Vegetables",
+      "name": "Potato",
+      "qty": "800 kg",
+      "quality": "Average",
+      "harvestMs": 1784898002965,
+      "desc": "Good quality white potatoes from Mandya taluk. Bulk pricing available.",
+      "district": "Mandya",
+      "taluk": "Maddur",
+      "img": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=600&auto=format&fit=crop",
+      "base": 22,
+      "aiPrice": 22,
+      "price": 21,
+      "status": "AVAILABLE",
+      "ai": {
+        "base": 22,
+        "qAdj": -2.2,
+        "fAdj": 1.1,
+        "sAdj": 3.3,
+        "wAdj": 0,
+        "final": 24.2,
+        "conf": 88,
+        "rec": "✅ Promote Listing — Demand is high"
+      },
+      "createdAt": 1784984402965
+    },
+    {
+      "id": "p3",
+      "farmId": "p3_farmer",
+      "farmerName": "Ramegowda H",
+      "farmerPhone": "9740055566",
+      "cat": "Fruits",
+      "name": "Mango",
+      "qty": "12 quintals",
+      "quality": "Premium",
+      "harvestMs": 1784466002965,
+      "desc": "Premium Badami mangoes — sweet aroma, naturally ripened without carbide.",
+      "district": "Mysuru",
+      "taluk": "Hunsur",
+      "img": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=600&auto=format&fit=crop",
+      "base": 80,
+      "aiPrice": 80,
+      "price": 85,
+      "status": "AVAILABLE",
+      "ai": {
+        "base": 80,
+        "qAdj": 12,
+        "fAdj": -12,
+        "sAdj": 0,
+        "wAdj": 0,
+        "final": 80,
+        "conf": 90,
+        "rec": "⚠️ Sell Today — Freshness declining"
+      },
+      "createdAt": 1784984402965
+    }
+  ],
+  "holds": [],
+  "chats": {
+    "p1": [
+      {
+        "id": "m_1785049006979_ffb7",
+        "productId": "p1",
+        "senderUid": "demo_buyer",
+        "senderName": "Suresh Kumar",
+        "senderRole": "Buyer",
+        "text": "hi",
+        "lang": "en",
+        "ts": 1785049006979
+      }
+    ],
+    "p_1785049164193": [
+      {
+        "id": "m_1785049193212_788h",
+        "productId": "p_1785049164193",
+        "senderUid": "demo_buyer",
+        "senderName": "Suresh Kumar",
+        "senderRole": "Buyer",
+        "text": "hello",
+        "lang": "en",
+        "ts": 1785049193212
+      }
+    ]
+  }
+}

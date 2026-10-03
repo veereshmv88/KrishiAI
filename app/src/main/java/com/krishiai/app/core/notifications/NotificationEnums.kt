@@ -1,0 +1,34 @@
+package com.krishiai.app.core.notifications
+
+enum class NotificationPriority {
+    LOW, NORMAL, HIGH, CRITICAL
+}
+
+enum class NotificationCategory {
+    MARKETPLACE,
+    BUY_REQUESTS,
+    SELL_REQUESTS,
+    CROP_LISTINGS,
+    CROP_SOLD,
+    ORDER_UPDATES,
+    PAYMENTS,
+    WEATHER_ALERTS,
+    AI_DISEASE_DETECTION,
+    AI_CROP_HEALTH_REPORTS,
+    GOVT_SCHEMES,
+    MARKET_PRICE_ALERTS,
+    NEW_REGISTRATIONS,
+    USER_VERIFICATION,
+    CHAT_MESSAGES,
+    AI_RECOMMENDATIONS,
+    OCR_REPORTS,
+    VOICE_ASSISTANT_REMINDERS,
+    SECURITY_ALERTS,
+    SYSTEM_ANNOUNCEMENTS,
+    APP_UPDATES,
+    GENERAL
+}
+
+enum class NotificationSyncStatus {
+    PENDING, SYNCED, FAILED
+}

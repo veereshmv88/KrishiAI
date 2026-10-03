@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KrishiAI – Interactive Simulator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css"/>
+  <!-- TensorFlow.js for crop image detection -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0/dist/mobilenet.min.js"></script>
+  <!-- Socket.IO client – served automatically by socket.io package -->
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- ═══════════════ LEFT CONSOLE ═══════════════ -->
+  <aside class="console">
+    <div class="console-logo">
+      <div class="console-logo-icon">🌿</div>
+      <div>
+        <div class="console-logo-title">KrishiAI</div>
+        <div class="console-logo-sub">Interactive Simulator</div>
+      </div>
+    </div>
+
+    <!-- Server Status -->
+    <div class="c-section">
+      <div class="c-label">🖥 Server Status</div>
+      <div id="server-status" class="sync-badge">
+        <div class="sync-dot" style="background:#f59e0b;"></div>
+        <span>Connecting to server…</span>
+      </div>
+      <div style="margin-top:8px;font-size:9px;color:rgba(184,217,186,.4);">
+        Other devices: open <strong id="net-url" style="color:#81c784;">http://172.18.26.115:3001</strong>
+      </div>
+      <!-- Real-time status badge -->
+      <div id="realtime-status" class="sync-badge" style="margin-top:6px;">
+        <div class="sync-dot" style="background:#f59e0b;"></div>
+        <span>Socket.IO connecting…</span>
+      </div>
+    </div>
+
+    <!-- Weather -->
+    <div class="c-section">
+      <div class="c-label">🌦 Simulate / Override Weather</div>
+      <div id="auto-weather" class="w-info" style="margin-bottom:8px;">📍 Detecting location…</div>
+      <div class="w-toggle">
+        <button id="btn-clear" class="w-btn active" onclick="setWeather('Clear')">☀️ Clear</button>
+        <button id="btn-rain"  class="w-btn"        onclick="setWeather('Rain')">🌧 Rainy +10%</button>
+      </div>
+      <div class="w-info" id="w-info">28°C · Clear · 62% Humidity</div>
+    </div>
+
+    <!-- AI Formula -->
+    <div class="c-section">
+      <div class="c-label">📐 AI Price Formula</div>
+      <div class="formula-box"><code>Price = Base × (1 + Q + F + S + W)</code></div>
+      <div class="factor-list">
+        <div class="factor"><b>Q – Quality</b><span>Premium +15% · Good +5% · Avg –10%</span></div>
+        <div class="factor"><b>F – Freshness</b><span>≤2d +5% · 3–5d 0% · &gt;5d –15%</span></div>
+        <div class="factor"><b>S – Season</b><span>Peak –5% · Off-season +15%</span></div>
+        <div class="factor"><b>W – Weather</b><span>Rain/Storm +10% logistics</span></div>
+      </div>
+    </div>
+
+    <!-- Appearance -->
+    <div class="c-section">
+      <div class="c-label">🎨 Appearance</div>
+      <div class="dark-toggle-row" style="margin-bottom:12px;">
+        <span class="dark-toggle-label">🌙 Dark Mode</span>
+        <label class="c-toggle">
+          <input type="checkbox" id="dark-toggle-con" onchange="toggleDark()">
+          <span class="c-slider"></span>
+        </label>
+      </div>
+      <div class="c-label" style="margin-top:0;">🌐 Language / ಭಾಷೆ</div>
+      <div class="lang-toggle">
+        <button id="lang-en" class="lang-btn active" onclick="setLang('en')">🇬🇧 English</button>
+        <button id="lang-kn" class="lang-btn"        onclick="setLang('kn')">🇮🇳 ಕನ್ನಡ</button>
+      </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="c-section">
+      <div class="c-label">🏗 Architecture</div>
+      <div class="arch-stack">
+        <div class="arch-row ui-row"><span>UI</span>Jetpack Compose · MD3</div>
+        <div class="arch-arrow">↓ StateFlow</div>
+        <div class="arch-row vm-row"><span>ViewModel</span>MVVM · Hilt DI</div>
+        <div class="arch-arrow">↓ UseCase</div>
+        <div class="arch-row uc-row"><span>Domain</span>CalculateAiPriceUseCase</div>
+        <div class="arch-arrow">↓ Repository</div>
+        <div class="arch-row db-row"><span>Data</span>Firestore · Storage · Weather API</div>
+      </div>
+    </div>
+
+    <!-- Screen Nav -->
+    <div class="c-section">
+      <div class="c-label">📱 Jump to Screen</div>
+      <div class="screen-grid">
+        <button onclick="navigate('splash')">Splash</button>
+        <button onclick="navigate('onboarding')">Onboarding</button>
+        <button onclick="navigate('welcome')">Role Select</button>
+        <button onclick="navigate('login')">Login</button>
+        <button onclick="navigate('signup')">Signup</button>
+        <button onclick="navigate('farmer-dashboard')">Farmer DB</button>
+        <button onclick="navigate('upload-crop')">Upload Crop</button>
+        <button onclick="navigate('my-products')">My Crops</button>
+        <button onclick="navigate('buyer-dashboard')">Buyer DB</button>
+        <button onclick="navigate('product-details')">Details</button>
+        <button onclick="navigate('chats')">💬 Chats</button>
+        <button onclick="navigate('profile')">Profile</button>
+        <button onclick="navigate('settings')">Settings</button>
+        <button onclick="navigate('my-holds')">My Holds</button>
+        <button onclick="navigate('hold-requests')">Hold Req.</button>
+      </div>
+    </div>
+
+    <div class="c-footer">VTU Mini Project · Node.js · Kotlin · Firebase · Socket.IO</div>
+  </aside>
+
+  <!-- ═══════════════ PHONE STAGE ═══════════════ -->
+  <main class="stage">
+    <div class="phone">
+      <div class="phone-top">
+        <div class="phone-speaker"></div>
+        <div class="phone-cam"></div>
+      </div>
+      <div class="phone-screen" id="viewport" data-theme="light"></div>
+      <div class="phone-chin"></div>
+    </div>
+    <div class="stage-label" id="stage-label">← Use console · Other devices: open http://172.18.26.115:3001</div>
+  </main>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

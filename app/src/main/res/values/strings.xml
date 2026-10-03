@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KrishiAI</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_marketplace">Market</string>
+    <string name="nav_sell">Sell</string>
+    <string name="nav_ai_tools">AI Tools</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_profile">Profile</string>
+    <string name="ai_voice_assistant">AI Voice Assistant</string>
+    <string name="ai_crop_scanner">AI Crop Scanner</string>
+    <string name="ai_price_prediction">Price Prediction</string>
+    <string name="ai_disease_detection">Disease Detection</string>
+    <string name="ai_profit_estimator">Profit Estimator</string>
+
+    <string name="profile_edit">Edit Profile</string>
+    <string name="profile_share">Share Profile</string>
+    <string name="profile_personal_info">Personal Information</string>
+    <string name="profile_farm_details">My Farm Details</string>
+    <string name="profile_language">Language</string>
+    <string name="profile_support">Support &amp; Help</string>
+    <string name="profile_logout">Logout</string>
+    
+    <string name="settings_language">Language Settings</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_wishlist">Wishlist</string>
+    
+    <!-- AI Voice Assistant Strings -->
+    <string name="ai_listening">Listening...</string>
+    <string name="ai_processing">Processing...</string>
+    <string name="ai_thinking">Thinking...</string>
+    <string name="ai_speaking">Speaking...</string>
+    <string name="ai_initializing">Initializing AI...</string>
+    <string name="ai_connecting">Connecting...</string>
+    <string name="ai_offline_mode">Offline Mode</string>
+    <string name="ai_no_internet">No Internet</string>
+    <string name="ai_retry">Retry</string>
+    <string name="ai_send">Send</string>
+    <string name="ai_stop">Stop</string>
+    <string name="ai_cancel">Cancel</string>
+    <string name="ai_clear_chat">Clear Chat</string>
+    <string name="ai_new_conversation">New Conversation</string>
+    <string name="ai_type_question">Type your question...</string>
+    <string name="ai_tap_mic">Tap microphone to speak</string>
+    <string name="ai_ask_anything">Ask anything about farming</string>
+    <string name="ai_farmer_assistant">Farmer Assistant</string>
+    <string name="ai_loading">Loading...</string>
+    <string name="ai_generating_answer">Generating Answer...</string>
+    <string name="ai_searching_knowledge">Searching Knowledge...</string>
+    <string name="ai_analyzing_disease">Analyzing Disease...</string>
+    <string name="ai_fetching_prices">Fetching Live Market Prices...</string>
+    <string name="ai_fetching_weather">Fetching Weather...</string>
+    <string name="ai_getting_schemes">Getting Government Schemes...</string>
+    <string name="ai_error">Error</string>
+    <string name="ai_unknown_error">Unknown Error</string>
+    <string name="ai_try_again">Try Again</string>
+    <string name="ai_mic_permission_required">Microphone Permission Required</string>
+    <string name="ai_camera_permission_required">Camera Permission Required</string>
+    <string name="ai_location_permission_required">Location Permission Required</string>
+    <string name="ai_open_settings">Open Settings</string>
+    <string name="ai_mic_disabled">Microphone Disabled</string>
+    <string name="ai_listening_stopped">Listening Stopped</string>
+    <string name="ai_speech_not_detected">Speech Not Detected</string>
+    <string name="ai_conversation_ended">Conversation Ended</string>
+    <string name="ai_welcome_message">Welcome Message</string>
+    <string name="ai_good_morning">Good Morning</string>
+    <string name="ai_good_afternoon">Good Afternoon</string>
+    <string name="ai_good_evening">Good Evening</string>
+    <string name="ai_how_can_i_help">How can I help you today?</string>
+    <string name="ai_network_error">Network Error</string>
+    <string name="ai_service_unavailable">AI Service Unavailable</string>
+    <string name="ai_mic_permission_denied">Microphone Permission Denied</string>
+    <string name="ai_speech_recognition_failed">Speech Recognition Failed</string>
+    <string name="ai_no_speech_detected">No Speech Detected</string>
+    <string name="ai_request_timed_out">Request Timed Out</string>
+    <string name="ai_something_went_wrong">Something Went Wrong</string>
+    <string name="ai_tap_to_speak">Tap to Speak</string>
+    <string name="ai_stop_listening">Stop Listening</string>
+    <string name="ai_repeat_answer">Repeat Answer</string>
+    <string name="ai_mute">Mute</string>
+    <string name="ai_unmute">Unmute</string>
+    <string name="ai_voice_settings">Voice Settings</string>
+    <string name="ai_speech_speed">Speech Speed</string>
+    <string name="ai_speech_language">Speech Language</string>
+    <string name="ai_try_asking">Try asking:</string>
+    <string name="ai_copy">Copy</string>
+    <string name="ai_clear">Clear</string>
+    <string name="ai_back">Back</string>
+    <string name="ai_microphone">Microphone</string>
+
+    <string-array name="ai_suggested_questions">
+        <item>What fertilizer should I use for tomato?</item>
+        <item>What is today\'s market price?</item>
+        <item>How can I control pests?</item>
+        <item>What is today\'s weather?</item>
+        <item>Show my crops.</item>
+    </string-array>
+</resources>

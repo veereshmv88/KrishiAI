@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಕೃಷಿAI</string>
+    <string name="nav_home">ಮುಖಪುಟ</string>
+    <string name="nav_marketplace">ಮಾರುಕಟ್ಟೆ</string>
+    <string name="nav_sell">ಮಾರಾಟ</string>
+    <string name="nav_ai_tools">AI ಪರಿಕರಗಳು</string>
+    <string name="nav_search">ಹುಡುಕಿ</string>
+    <string name="nav_cart">ಕಾರ್ಟ್</string>
+    <string name="nav_orders">ಆದೇಶಗಳು</string>
+    <string name="nav_profile">ಪ್ರೊಫೈಲ್</string>
+    
+    <string name="ai_voice_assistant">AI ಧ್ವನಿ ಸಹಾಯಕ</string>
+    <string name="ai_crop_scanner">AI ಬೆಳೆ ಸ್ಕ್ಯಾನರ್</string>
+    <string name="ai_price_prediction">ಬೆಲೆ ಮುನ್ಸೂಚನೆ</string>
+    <string name="ai_disease_detection">ರೋಗ ಪತ್ತೆ</string>
+    <string name="ai_profit_estimator">ಲಾಭ ಅಂದಾಜುಗಾರ</string>
+
+    <string name="profile_edit">ಪ್ರೊಫೈಲ್ ಎಡಿಟ್ ಮಾಡಿ</string>
+    <string name="profile_share">ಪ್ರೊಫೈಲ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="profile_personal_info">ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ</string>
+    <string name="profile_farm_details">ನನ್ನ ಜಮೀನಿನ ವಿವರಗಳು</string>
+    <string name="profile_language">ಭಾಷೆ (Language)</string>
+    <string name="profile_support">ಬೆಂಬಲ ಮತ್ತು ಸಹಾಯ</string>
+    <string name="profile_logout">ಲಾಗ್ ಔಟ್</string>
+    
+    <string name="settings_language">ಭಾಷಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="nav_explore">ಅನ್ವೇಷಿಸಿ</string>
+    <string name="nav_wishlist">ಇಚ್ಛೆಯ ಪಟ್ಟಿ</string>
+
+    <!-- AI Voice Assistant Strings -->
+    <string name="ai_listening">ಆಲಿಸುತ್ತಿದೆ...</string>
+    <string name="ai_processing">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_thinking">ಯೋಚಿಸುತ್ತಿದೆ...</string>
+    <string name="ai_speaking">ಮಾತನಾಡುತ್ತಿದೆ...</string>
+    <string name="ai_initializing">AI ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ...</string>
+    <string name="ai_connecting">ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_offline_mode">ಆಫ್‌ಲೈನ್ ಮೋಡ್</string>
+    <string name="ai_no_internet">ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವಿಲ್ಲ</string>
+    <string name="ai_retry">ಮರುಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="ai_send">ಕಳುಹಿಸಿ</string>
+    <string name="ai_stop">ನಿಲ್ಲಿಸಿ</string>
+    <string name="ai_cancel">ರದ್ದುಮಾಡಿ</string>
+    <string name="ai_clear_chat">ಚಾಟ್ ಅಳಿಸಿ</string>
+    <string name="ai_new_conversation">ಹೊಸ ಸಂಭಾಷಣೆ</string>
+    <string name="ai_type_question">ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ...</string>
+    <string name="ai_tap_mic">ಮಾತನಾಡಲು ಮೈಕ್ರೊಫೋನ್ ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="ai_ask_anything">ಕೃಷಿ ಬಗ್ಗೆ ಏನನ್ನಾದರೂ ಕೇಳಿ</string>
+    <string name="ai_farmer_assistant">ರೈತ ಸಹಾಯಕ</string>
+    <string name="ai_loading">ಲೋಡ್ ಆಗುತ್ತಿದೆ...</string>
+    <string name="ai_generating_answer">ಉತ್ತರವನ್ನು ರಚಿಸಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_searching_knowledge">ಜ್ಞಾನವನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_analyzing_disease">ರೋಗವನ್ನು ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_fetching_prices">ನೇರ ಮಾರುಕಟ್ಟೆ ಬೆಲೆಗಳನ್ನು ತರಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_fetching_weather">ಹವಾಮಾನವನ್ನು ತರಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_getting_schemes">ಸರ್ಕಾರಿ ಯೋಜನೆಗಳನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ...</string>
+    <string name="ai_error">ದೋಷ</string>
+    <string name="ai_unknown_error">ಅಜ್ಞಾತ ದೋಷ</string>
+    <string name="ai_try_again">ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="ai_mic_permission_required">ಮೈಕ್ರೊಫೋನ್ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ</string>
+    <string name="ai_camera_permission_required">ಕ್ಯಾಮೆರಾ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ</string>
+    <string name="ai_location_permission_required">ಸ್ಥಳ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ</string>
+    <string name="ai_open_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ</string>
+    <string name="ai_mic_disabled">ಮೈಕ್ರೊಫೋನ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
+    <string name="ai_listening_stopped">ಆಲಿಸುವುದು ನಿಂತಿದೆ</string>
+    <string name="ai_speech_not_detected">ಮಾತು ಪತ್ತೆಯಾಗಿಲ್ಲ</string>
+    <string name="ai_conversation_ended">ಸಂಭಾಷಣೆ ಕೊನೆಗೊಂಡಿದೆ</string>
+    <string name="ai_welcome_message">ಸ್ವಾಗತ ಸಂದೇಶ</string>
+    <string name="ai_good_morning">ಶುಭೋದಯ</string>
+    <string name="ai_good_afternoon">ಶುಭ ಮಧ್ಯಾಹ್ನ</string>
+    <string name="ai_good_evening">ಶುಭ ಸಂಜೆ</string>
+    <string name="ai_how_can_i_help">ಇಂದು ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಲ್ಲೆ?</string>
+    <string name="ai_network_error">ನೆಟ್‌ವರ್ಕ್ ದೋಷ</string>
+    <string name="ai_service_unavailable">AI ಸೇವೆ ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="ai_mic_permission_denied">ಮೈಕ್ರೊಫೋನ್ ಅನುಮತಿ ನಿರಾಕರಿಸಲಾಗಿದೆ</string>
+    <string name="ai_speech_recognition_failed">ಧ್ವನಿ ಗುರುತಿಸುವಿಕೆ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="ai_no_speech_detected">ಯಾವುದೇ ಮಾತು ಪತ್ತೆಯಾಗಿಲ್ಲ</string>
+    <string name="ai_request_timed_out">ವಿನಂತಿ ಸಮಯ ಮೀರಿದೆ</string>
+    <string name="ai_something_went_wrong">ಏನೋ ತಪ್ಪಾಗಿದೆ</string>
+    <string name="ai_tap_to_speak">ಮಾತನಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="ai_stop_listening">ಆಲಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ</string>
+    <string name="ai_repeat_answer">ಉತ್ತರವನ್ನು ಪುನರಾವರ್ತಿಸಿ</string>
+    <string name="ai_mute">ಮ್ಯೂಟ್ ಮಾಡಿ</string>
+    <string name="ai_unmute">ಅನ್‌ಮ್ಯೂಟ್ ಮಾಡಿ</string>
+    <string name="ai_voice_settings">ಧ್ವನಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="ai_speech_speed">ಮಾತಿನ ವೇಗ</string>
+    <string name="ai_speech_language">ಮಾತನಾಡುವ ಭಾಷೆ</string>
+    <string name="ai_try_asking">ಕೇಳಲು ಪ್ರಯತ್ನಿಸಿ:</string>
+    <string name="ai_copy">ನಕಲಿಸಿ</string>
+    <string name="ai_clear">ಅಳಿಸಿ</string>
+    <string name="ai_back">ಹಿಂದೆ</string>
+    <string name="ai_microphone">ಮೈಕ್ರೊಫೋನ್</string>
+
+    <string-array name="ai_suggested_questions">
+        <item>ಟೊಮೇಟೊಗೆ ಯಾವ ರಸಗೊಬ್ಬರ ಬಳಸಬೇಕು?</item>
+        <item>ಇಂದಿನ ಮಾರುಕಟ್ಟೆ ಬೆಲೆ ಎಷ್ಟು?</item>
+        <item>ಕೀಟಗಳನ್ನು ಹೇಗೆ ನಿಯಂತ್ರಿಸಬಹುದು?</item>
+        <item>ಇಂದಿನ ಹವಾಮಾನ ಹೇಗಿದೆ?</item>
+        <item>ನನ್ನ ಬೆಳೆಗಳನ್ನು ತೋರಿಸಿ.</item>
+    </string-array>
+</resources>

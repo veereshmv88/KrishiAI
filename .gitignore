@@ -1,0 +1,13 @@
+*.iml
+.gradle
+local.properties
+/.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild
+.cxx/
+jdk21/
+jdk21.zip
+build_attempt*.txt
+build_output.txt

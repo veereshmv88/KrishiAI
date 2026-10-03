@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    KrishiAI App Icon Foreground – A stylized wheat stalk / leaf representing agriculture.
+    Used by the adaptive launcher icon (mipmap/ic_launcher.xml).
+    NOTE: Android VectorDrawable only supports <path>, <group>, <clip-path>.
+          SVG <ellipse> and <circle> are converted to equivalent <path> arcs.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer decorative circle backdrop -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54 m-36,0 a36,36 0 1,0 72,0 a36,36 0 1,0 -72,0" />
+
+    <!-- Central stem -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M53,68 L55,68 L55,36 L53,36 Z" />
+
+    <!-- Left leaf -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,52 C48,46 40,44 38,48 C36,52 42,56 54,52 Z" />
+
+    <!-- Right leaf -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,52 C60,46 68,44 70,48 C72,52 66,56 54,52 Z" />
+
+    <!-- Top grain head – left grain -->
+    <path
+        android:fillColor="#F9A825"
+        android:pathData="M54,36 C50,32 46,33 46,36 C46,39 50,40 54,38 Z" />
+
+    <!-- Top grain head – right grain -->
+    <path
+        android:fillColor="#F9A825"
+        android:pathData="M54,36 C58,32 62,33 62,36 C62,39 58,40 54,38 Z" />
+
+    <!-- Top grain head – centre ellipse (cx=54 cy=36 rx=3 ry=4)
+         Converted from <ellipse> to arc path: M(cx-rx,cy) a rx,ry 0 1,0 2rx,0 a rx,ry 0 1,0 -2rx,0 -->
+    <path
+        android:fillColor="#F57F17"
+        android:pathData="M51,36 a3,4 0 1,0 6,0 a3,4 0 1,0 -6,0" />
+
+    <!-- Small AI sparkle dot at (40,62) r=2
+         M(cx-r,cy) a r,r 0 1,0 2r,0 a r,r 0 1,0 -2r,0 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,62 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+
+    <!-- Small AI sparkle dot at (68,62) r=2 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,62 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+
+    <!-- Small AI sparkle dot at (54,70) r=2 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,70 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+
+</vector>

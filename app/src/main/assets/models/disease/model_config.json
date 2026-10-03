@@ -1,0 +1,20 @@
+{
+  "modelName": "KrishiAI Disease Classifier",
+  "version": "1.0",
+  "fileName": "model_float16_quant.tflite",
+  "labelsFile": "class_indices.json",
+  "knowledgeFile": "disease_knowledge.json",
+  "inputSize": 384,
+  "confidenceThreshold": 0.60,
+  "releaseDate": "2026-08-01",
+  "modelType": "EfficientNetV2S Float16 Quantized",
+  "healthScoreCalculation": {
+    "severityWeights": {
+      "Healthy": 100,
+      "Mild": 75,
+      "Moderate": 50,
+      "Severe": 25
+    },
+    "confidenceMultiplierEnabled": true
+  }
+}

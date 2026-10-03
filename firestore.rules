@@ -1,0 +1,66 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+    
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create, update, delete: if isAuthenticated() && isOwner(userId);
+    }
+    
+    match /products/{productId} {
+      allow read: if true; 
+      allow create: if isAuthenticated() && getUserRole() == 'FARMER';
+      allow update: if isAuthenticated() && (isOwner(resource.data.farmerId) || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'quantityKg']));
+      allow delete: if isAuthenticated() && isOwner(resource.data.farmerId);
+    }
+    
+    match /buyer_orders/{orderId} {
+      allow read: if isAuthenticated() && (isOwner(resource.data.buyerId) || isOwner(resource.data.farmerId));
+      allow create: if isAuthenticated() && isOwner(request.resource.data.buyerId);
+      allow update: if isAuthenticated() && (isOwner(resource.data.buyerId) || isOwner(resource.data.farmerId));
+      allow delete: if false; 
+    }
+
+    match /buyer_cart/{itemId} {
+      allow read, update, delete: if isAuthenticated() && isOwner(resource.data.buyerId);
+      allow create: if isAuthenticated() && isOwner(request.resource.data.buyerId);
+    }
+
+    match /buyer_wishlist/{itemId} {
+      allow read, update, delete: if isAuthenticated() && isOwner(resource.data.buyerId);
+      allow create: if isAuthenticated() && isOwner(request.resource.data.buyerId);
+    }
+
+    match /notifications/{notifId} {
+      allow read: if isAuthenticated() && isOwner(resource.data.userId);
+      allow create: if isAuthenticated();
+      allow update, delete: if isAuthenticated() && isOwner(resource.data.userId);
+    }
+
+    match /apmc_prices/{docId} {
+      allow read: if true;
+      allow write: if false; 
+    }
+    
+    match /market_intelligence/{docId} {
+      allow read: if true;
+      allow write: if false; 
+    }
+    
+    match /analytics/{farmerId} {
+      allow read, write: if isAuthenticated() && isOwner(farmerId);
+    }
+  }
+}
